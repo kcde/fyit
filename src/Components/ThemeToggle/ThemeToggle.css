@@ -1,0 +1,41 @@
+.theme-toggle {
+    font-weight: var(--font-xl);
+    font-size: 14px;
+    color: var(--sec-text-clr);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.toggle {
+    height: 24px;
+    width: 50px;
+    background: var(--toggle-bg);
+    border-radius: 30px;
+    position: relative;
+}
+.toggle .switch {
+    width: 20px;
+    height: 20px;
+    background-color: var(--switch-bg);
+    border-radius: 100vw;
+    position: absolute;
+    left: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 350ms ease-in-out;
+}
+
+/* Light mode */
+.light-mode {
+    --bg-color: white;
+    --bg-color2: var(--very-pale-blue);
+    --toggle-bg: var(--dark-grayish-blue);
+    --switch-bg: var(--very-pale-blue);
+    --main-text-clr: var(--very-dark-blue);
+    --sec-text-clr: var(--dark-grayish-blue);
+    --card-bg: var(--light-grayish-blue);
+    --card-bg-hover: hsl(227, 47%, 93%);
+}
+.light-mode .toggle .switch {
+    left: 28px;
+}
