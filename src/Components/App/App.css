@@ -38,6 +38,12 @@
 .loss {
     color: var(--bright-red);
 }
+
+.cards .disabled {
+    position: relative;
+    filter: blur(10px);
+}
+
 /* Margins */
 .mr-05 {
     margin-right: 0.25rem;

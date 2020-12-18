@@ -9,7 +9,7 @@ import lossIcon from '../icon-down.svg';
 class Instagram extends React.Component {
     render() {
         return (
-            <div className="card spacer-y ig-card">
+            <div className={`card spacer-y ig-card ${this.props.loggedIn}`}>
                 <div className="social flex ai-c jc-c">
                     <img src={igIcon} className="social-icon mr-1" alt="instagram social icon" />
                     <p>@realnathanf</p>

@@ -9,7 +9,7 @@ import lossIcon from '../icon-down.svg';
 class Youtube extends React.Component {
     render() {
         return (
-            <div className="card spacer-y yt-card">
+            <div className={`card spacer-y yt-card ${this.props.loggedIn}`}>
                 <div className="social flex ai-c jc-c">
                     <img src={ytIcon} className="social-icon mr-1" alt="youtube social icon" />
                     <p>@Nathan F.</p>

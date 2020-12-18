@@ -6,16 +6,41 @@ import Instagram from './Instagram/Instagram';
 import Twitter from './Twitter/Twitter';
 
 class Accounts extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.loggedIn = this.loggedIn.bind(this);
+
+        this.state = {
+            fb: {
+                login: false,
+            },
+            yt: {
+                login: false,
+            },
+            ig: {
+                login: false,
+            },
+            tw: {
+                login: false,
+            },
+        };
+    }
+
+    loggedIn(account) {
+        return this.state[account].login ? '' : 'disabled';
+    }
+
     render() {
         return (
             <div className="cards primary-cards mb-6">
-                <Facebook />
+                <Facebook loggedIn={this.loggedIn('fb')} />
 
-                <Youtube />
+                <Youtube loggedIn={this.loggedIn('yt')} />
 
-                <Instagram />
+                <Instagram loggedIn={this.loggedIn('ig')} />
 
-                <Twitter />
+                <Twitter loggedIn={this.loggedIn('tw')} />
             </div>
         );
     }
