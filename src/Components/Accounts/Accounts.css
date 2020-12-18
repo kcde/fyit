@@ -1,0 +1,19 @@
+.primary-cards .card {
+    text-align: center;
+}
+.social p {
+    color: var(--sec-text-clr);
+    font-weight: var(--font-xxl);
+    font-size: 0.875rem;
+}
+.fans p {
+    font-size: 3rem;
+    font-weight: var(--font-xxl);
+}
+
+.fans span {
+    color: var(--sec-text-clr);
+    font-weight: var(--font-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+}

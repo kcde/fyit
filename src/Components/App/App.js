@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import logo from './logo.png';
 import ThemeToggle from '../ThemeToggle/ThemeToggle';
+import Accounts from '../Accounts/Accounts';
 
 class App extends React.Component {
     constructor(props) {
@@ -34,6 +35,9 @@ class App extends React.Component {
                         </div>
                     </div>
                 </header>
+                <main>
+                    <Accounts />
+                </main>
             </div>
         );
     }

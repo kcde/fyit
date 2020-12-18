@@ -31,6 +31,10 @@
 .spacer-x > * + * {
     margin-left: 1.875rem;
 }
+
+.gain {
+    color: var(--lime-green);
+}
 /* Margins */
 .mr-05 {
     margin-right: 0.25rem;
@@ -69,6 +73,9 @@
     width: 30%;
     width: clamp(20%, 5vw, 30%);
 }
+.logo img {
+    width: 100%;
+}
 
 .header-container {
     display: flex;
@@ -90,6 +97,35 @@
     color: var(--sec-text-clr);
     font-weight: var(--font-xl);
     font-size: 0.875rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.875rem;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border-radius: 5px;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    transition: background-color 550ms ease-in-out, transform 250ms ease-in-out;
+}
+
+.card:hover {
+    background-color: var(--card-bg-hover);
+    transform: scale(1.05);
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.stats {
+    font-size: 0.875rem;
+    font-weight: var(--font-xl);
 }
 
 @media (min-width: 768px) {
