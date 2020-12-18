@@ -1,0 +1,14 @@
+.ig-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    overflow: hidden;
+    width: 100%;
+    background: var(--ig-border);
+}
+.ig-card {
+    position: relative;
+    overflow: hidden;
+}

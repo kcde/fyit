@@ -1,3 +1,32 @@
 import React from 'react';
-import ytIcon from 'icon-youtube.svg';
+import './Youtube.css';
+import ytIcon from './icon-youtube.svg';
+// eslint-disable-next-line
 import gainIcon from '../icon-up.svg';
+// eslint-disable-next-line
+import lossIcon from '../icon-down.svg';
+
+class Youtube extends React.Component {
+    render() {
+        return (
+            <div className="card spacer-y yt-card">
+                <div className="social flex ai-c jc-c">
+                    <img src={ytIcon} className="social-icon mr-1" alt="youtube social icon" />
+                    <p>@Nathan F.</p>
+                </div>
+
+                <div className="fans">
+                    <p>8239</p>
+                    <span>subscribers</span>
+                </div>
+
+                <div className="stats loss flex ai-c jc-c">
+                    <img src={lossIcon} className="mr-05" alt="" />
+                    <p>144 Today</p>
+                </div>
+            </div>
+        );
+    }
+}
+
+export default Youtube;

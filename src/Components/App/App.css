@@ -35,6 +35,9 @@
 .gain {
     color: var(--lime-green);
 }
+.loss {
+    color: var(--bright-red);
+}
 /* Margins */
 .mr-05 {
     margin-right: 0.25rem;
