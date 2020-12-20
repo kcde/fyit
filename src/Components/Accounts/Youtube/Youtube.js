@@ -5,11 +5,14 @@ import ytIcon from './icon-youtube.svg';
 import gainIcon from '../icon-up.svg';
 // eslint-disable-next-line
 import lossIcon from '../icon-down.svg';
+import Error from '../../error/error';
 
 class Youtube extends React.Component {
     render() {
         return (
             <div className={`card spacer-y yt-card ${this.props.loggedIn}`}>
+                {!this.props.loggedIn ? <Error logo={ytIcon} /> : ''}
+
                 <div className="social flex ai-c jc-c">
                     <img src={ytIcon} className="social-icon mr-1" alt="youtube social icon" />
                     <p>@Nathan F.</p>

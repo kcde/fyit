@@ -39,11 +39,6 @@
     color: var(--bright-red);
 }
 
-.cards .disabled {
-    position: relative;
-    filter: blur(10px);
-}
-
 /* Margins */
 .mr-05 {
     margin-right: 0.25rem;
@@ -120,6 +115,8 @@
     padding-bottom: 1.5rem;
     padding-top: 1.5rem;
     transition: background-color 550ms ease-in-out, transform 250ms ease-in-out;
+    position: relative;
+    overflow: hidden;
 }
 
 .card:hover {

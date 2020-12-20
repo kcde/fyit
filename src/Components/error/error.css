@@ -1,0 +1,25 @@
+.error {
+    position: absolute;
+    background-color: var(--bg-color2);
+
+    opacity: 0.9;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: var(--main-text-clr);
+    transition: background-color 550ms ease-in-out;
+}
+
+.error-text {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.error-logo {
+    position: absolute;
+    width: 100%;
+    bottom: 1rem;
+}

@@ -5,11 +5,13 @@ import igIcon from './icon-instagram.svg';
 import gainIcon from '../icon-up.svg';
 // eslint-disable-next-line
 import lossIcon from '../icon-down.svg';
+import Error from '../../error/error';
 
 class Instagram extends React.Component {
     render() {
         return (
             <div className={`card spacer-y ig-card ${this.props.loggedIn}`}>
+                {!this.props.loggedIn ? <Error logo={igIcon} /> : ''}
                 <div className="social flex ai-c jc-c">
                     <img src={igIcon} className="social-icon mr-1" alt="instagram social icon" />
                     <p>@realnathanf</p>

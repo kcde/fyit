@@ -5,11 +5,13 @@ import twIcon from './icon-twitter.svg';
 import gainIcon from '../icon-up.svg';
 // eslint-disable-next-line
 import lossIcon from '../icon-down.svg';
-
+// eslint-disable-next-line
+import Error from '../../error/error';
 class Twitter extends React.Component {
     render() {
         return (
-            <div className={`card spacer-y twitter-card ${this.props.loggedIn}`}>
+            <div className={`card spacer-y twitter-card`}>
+                {!this.props.loggedIn ? <Error logo={twIcon} /> : ''}
                 <div className="social flex ai-c jc-c">
                     <img src={twIcon} className="social-icon mr-1" alt="twitter social icon" />
                     <p>@nathanf</p>

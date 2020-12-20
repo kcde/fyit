@@ -28,7 +28,7 @@ class Accounts extends React.Component {
     }
 
     loggedIn(account) {
-        return this.state[account].login ? '' : 'disabled';
+        return this.state[account].login;
     }
 
     render() {
