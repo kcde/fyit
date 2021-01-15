@@ -23,7 +23,6 @@ class Twitter extends React.Component {
                 </div>
 
                 <div className="stats gain flex ai-c jc-c">
-                    <img src={gainIcon} className="social icon mr-1" alt="" />
                     <p>99 Today</p>
                 </div>
             </div>

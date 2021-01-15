@@ -1,13 +1,12 @@
 import React from 'react';
 import './Facebook.css';
 import fbIcon from './icon-facebook.svg';
-import gainIcon from '../icon-up.svg';
 import Error from '../../error/error';
 
 class Facebook extends React.Component {
     render() {
         return (
-            <div className={`card spacer-y fb-card ${this.props.loggedIn}`}>
+            <div className={`card spacer-y fb-card`}>
                 {!this.props.loggedIn ? <Error logo={fbIcon} /> : ''}
 
                 <div className="social flex ai-c jc-c">
@@ -20,8 +19,7 @@ class Facebook extends React.Component {
                     <span>Followers</span>
                 </div>
 
-                <div className="stats gain flex ai-c jc-c">
-                    <img src={gainIcon} className="mr-05" alt="" />
+                <div className="stats gain">
                     <p>12 Today</p>
                 </div>
             </div>

@@ -24,7 +24,6 @@ class Youtube extends React.Component {
                 </div>
 
                 <div className="stats loss flex ai-c jc-c">
-                    <img src={lossIcon} className="mr-05" alt="" />
                     <p>144 Today</p>
                 </div>
             </div>

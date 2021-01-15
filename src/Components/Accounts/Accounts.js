@@ -13,13 +13,13 @@ class Accounts extends React.Component {
 
         this.state = {
             fb: {
-                login: false,
+                login: true,
             },
             yt: {
-                login: false,
+                login: true,
             },
             ig: {
-                login: false,
+                login: true,
             },
             tw: {
                 login: false,

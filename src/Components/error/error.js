@@ -11,8 +11,8 @@ class Error extends React.Component {
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
-                        width="64px"
-                        height="64px"
+                        width="40px"
+                        height="40px"
                         className="mr-1"
                     >
                         <path
@@ -26,7 +26,7 @@ class Error extends React.Component {
                     <p>Connect account</p>
                 </div>
                 <div className="error-logo flex jc-c">
-                    <img src={this.props.logo} />
+                    <img src={this.props.logo} alt="site logo" />
                 </div>
             </div>
         );

@@ -23,7 +23,6 @@ class Instagram extends React.Component {
                 </div>
 
                 <div className="stats gain flex ai-c jc-c">
-                    <img src={gainIcon} className="mr-05" alt="" />
                     <p>1099 Today</p>
                 </div>
             </div>

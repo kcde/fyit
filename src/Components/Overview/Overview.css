@@ -1,0 +1,14 @@
+.engagement-head {
+    color: var(--sec-text-clr);
+    font-weight: var(--font-xl);
+}
+
+.engagement-stats > p {
+    font-size: 32px;
+    font-weight: var(--font-xl);
+}
+
+.secondary-cards .card {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}

@@ -3,6 +3,7 @@ import './App.css';
 import logo from './logo.png';
 import ThemeToggle from '../ThemeToggle/ThemeToggle';
 import Accounts from '../Accounts/Accounts';
+import Overview from '../Overview/Overview';
 
 class App extends React.Component {
     constructor(props) {
@@ -37,6 +38,7 @@ class App extends React.Component {
                 </header>
                 <main>
                     <Accounts />
+                    <Overview />
                 </main>
             </div>
         );
